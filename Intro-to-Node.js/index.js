@@ -1,6 +1,3 @@
-console.log("Hello World!")
-// alert("Hello World!")
-// console.log(window)
-console.log(global)
+#!/usr/bin/env node
 
-console.log(process.argv)
+import './src/command.js'

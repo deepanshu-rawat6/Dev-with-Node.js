@@ -1,0 +1,20 @@
+{
+  "name": "intro-to-node",
+  "version": "1.0.0",
+  "description": "In node, we can't use some of the browser(another runtime for JS) functions. To list a few:",
+  "main": "index.js",
+  "bin": {
+    "note_link": "./index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
+}
