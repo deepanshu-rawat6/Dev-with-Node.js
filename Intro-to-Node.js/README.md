@@ -160,3 +160,41 @@ yargs(hideBin(process.argv))
 ```
 
 **Note**: `<>` means required and `[]` means its optional
+
+# File I/O
+
+## Async Code
+
+Asynchronous means not-sequentail, like doing something in parallel or not in a particular order. In Node, we have **callbacks** for handling async code. A callback function is passed as an argument to a function that performs an asynchronous operation. When the operation is complete, the `callback` function is executed.
+
+Example for a sync code
+
+```js
+new Array(1000 * 20).fill(0).map((_,i) => {
+    console.log(i)
+}) 
+```
+
+Here, there is no element that would contribute to async operation. Here despite being a `callback` function, the code snippet was synchronous.
+
+Three reason for async nature of our code:
+
+1. Dealing with networks
+2. Using some category of timing function like `setTimeOut`,`setInterval`, etc.
+3. Databases and file systems, mainly related to some sort of storage
+
+Now, a sample of code dealing with file systems
+
+```js
+fs.readFile('file.txt', (err, data) => {
+  if (err) {
+    console.error(err)
+    return
+  }
+  console.log(data)
+})
+```
+
+## FS module
+
+ 
