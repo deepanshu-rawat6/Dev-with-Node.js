@@ -1,3 +1,6 @@
+import * as dotebnv from 'dotenv'
+dotebnv.config()
+
 import app from "./server"
 
 app.listen(3000, () => {

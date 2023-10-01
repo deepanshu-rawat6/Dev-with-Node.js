@@ -36,3 +36,6 @@ Good practice: To name in order to save the migration, to be used by other team 
 ## Middlewares
 
 Using a module named `morgan`, which just logs out information. Also, we have to specify the type of logging we want. Here, we've used `dev` for logging
+
+## Authentication
+
