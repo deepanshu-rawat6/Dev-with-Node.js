@@ -31,17 +31,22 @@ export const getProduct = async (req, res) => {
 }
 
 // POST a new product
-export const createProduct = async (req, res) => {
-    const product = await prisma.product.create({
-        data: {
-            name: req.body.name,
-            belongsToID: req.user.id
-        }
-    })
+export const createProduct = async (req, res, next) => {
+    try {
+        const product = await prisma.product.create({
+            data: {
+                name: req.body.name,
+                belongsToID: req.user.id
+            }
+        })
 
-    res.json({
-        data: product
-    })
+        res.json({
+            data: product
+        })
+    } catch (error) {
+        error.type = 'db'
+        next(error)
+    }
 }
 
 // PUT updated data in an existing product

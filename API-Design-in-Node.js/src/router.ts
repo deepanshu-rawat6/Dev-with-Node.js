@@ -69,4 +69,9 @@ router.post('/updatepoint',
 router.delete('/updatepoint/:id', () => { })
 
 
+router.use((err, req, res, next) => {
+    console.log(err)
+})
+
+
 export default router;
