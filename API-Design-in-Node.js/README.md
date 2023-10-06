@@ -39,3 +39,7 @@ Using a module named `morgan`, which just logs out information. Also, we have to
 
 ## Authentication
 
+## Routes and Error Handlers
+
+### Validation 
+
