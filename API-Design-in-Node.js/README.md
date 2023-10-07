@@ -285,7 +285,7 @@ Here are the scripts we need to add in the `package.json`:
 ```json
 "scripts": {
     "build": "tsc -p tsconfig.json",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js" //OR we can use this variant: nodemon -L dist/index.js
 }
 ```
 
