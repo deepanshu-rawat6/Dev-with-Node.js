@@ -12,7 +12,8 @@ Making API in Node.js can be overwhelming, but following a clean stucture can he
 6. Completing the routes, with `validation` checks using another middleware.
 7. Debug and adding error handlers for the handlers function, such that if they throw an error, our server doesn't crashes.
 8. Making a `dev`, `prod` and `testing` profiles to quickly switch between these modes.
-9.  
+9. Writing units and integration tests
+10. Finally, deployment!!!
 
 ## Modules
 
