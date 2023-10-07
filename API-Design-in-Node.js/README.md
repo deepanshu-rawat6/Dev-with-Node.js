@@ -3,6 +3,9 @@
 ### Access API L1 at: https://simple-crud-api-urht.onrender.com/ 
 ### Access API L2 at: https://excited-erin-cow.cyclic.app/
 
+## For Production use: node dist/index.js
+## For Development use: nodemon -L dist/index.js
+
 ## Structure
 
 Making API in Node.js can be overwhelming, but following a clean stucture can help in doing so:
