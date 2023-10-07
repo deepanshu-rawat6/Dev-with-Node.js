@@ -15,13 +15,13 @@ app.use(express.urlencoded({ extended: false }))
 app.get('/', (req, res) => {
     console.log('Hello from the server')
     res.status(200)
-    res.json({ message: 'Hello from the server' })
+    res.json({ message: 'hello' })
 })
 
 app.get('/test-error', (req, res, next) => {
-    setTimeout(() => {
-        next(new Error('Test error'))
-    }, 1)
+    res.json({
+        messgae: 'This is test-error route'
+    })
 })
 
 app.use('/api', protect, router)

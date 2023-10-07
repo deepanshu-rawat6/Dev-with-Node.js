@@ -9,8 +9,9 @@
       "skipLibCheck": true,
       "sourceMap": true,
       "lib": ["esnext"],
+      "declaration": true
     },
-    "include": ["src/**/*.ts"],
+    "include": ["src/**/*.ts", "src/blocking.js"],
     "exclude": ["node_modules"]
   }
   
